@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Program</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Choosing a career in computer science offers numerous advantages in today’s tech-driven world:
+        </div>
+        <div class="content">
+            <ul>
+                <li>High Demand and Growth: The tech industry continues to expand, with an ever-increasing need for skilled computer scientists. This demand opens numerous job opportunities across diverse sectors, from healthcare to finance, ensuring a robust and stable career path.</li>
+                <li>Universal Language: Programming languages act as a universal medium that transcends language barriers, allowing you to collaborate with teams and projects globally. This makes skills in computer science applicable and valuable in virtually any location or culture.</li>
+                <li>Diverse Career Opportunities: Computer science offers a wide range of career options, from software development and data analysis to cybersecurity and artificial intelligence, allowing you to tailor your career path to your interests and strengths.</li>
+            </ul>
+            <h2>What You will Study:</h2>
+            <div class="year-container">
+                <div class="year-box" onclick="showYearContent('year1')">Year 1</div>
+                <div class="year-box" onclick="showYearContent('year2')">Year 2</div>
+                <div class="year-box" onclick="showYearContent('year3')">Year 3</div>
+                <div class="year-box placement-year">Placement Year</div>
+               
+            </div>
+           </div>
+            <h3>MODULES:</h3>
+            <div class="module dropdown">
+                <a href="#details">
+                    <img src="arrow_icon.png" alt="Arrow Icon" style="vertical-align: middle; margin-right: 10px;">
+                    Block 1: Database Design & Implementation | Module Code - 23
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">Module Details</a>
+                    <a href="#">Further Information</a>
+                </div>
+            </div>
+            <div id="year1" class="year-content">
+                <h4>Year 1 Content:</h4>
+                <p>This is the content for Year 1.</p>
+            </div>
+            <div id="year2" class="year-content">
+                <h4>Year 2 Content:</h4>
+                <p>This is the content for Year 2.</p>
+            </div>
+            <div id="year3" class="year-content">
+                <h4>Year 3 Content:</h4>
+                <p> Note – final year has optional modules info as well..</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="details" class="container" style="display: none;">
+        <div class="header">
+            Block 1: Database Design & Implementation | Module Code - 23
+        </div>
+        <div class="content">
+            <p><strong>Note – this module is shared across Programme Artificial Intelligence AIO3</strong></p>
+            <h4>Core Topics Covered:</h4>
+            <ul>
+                <li>This module typically includes topics such as database normalization, data modeling, SQL query optimization, and understanding algorithms for efficient data retrieval. Students learn how to design robust databases and apply algorithms to enhance the performance and efficiency of data handling.</li>
+            </ul>
+            <h4>Real-World Relevance:</h4>
+            <ul>
+                <li>Mastery in database design and algorithms is highly valued in today’s data-driven world. Businesses rely on professionals who can manage and analyze vast amounts of data effectively, making these skills crucial for roles in software engineering, data analysis, and business intelligence.</li>
+            </ul>
+            <h4>Module Leader:</h4>
+            <p><strong>Dr. Jasmine Yousaf</strong>, an experienced computer scientist with over 8 years in the field. Her expertise spans database architecture and optimization, having successfully implemented data solutions for 13 companies and authored research papers on innovative algorithms for data management.</p>
+        </div>
+    </div>
+
+    <script>
+        function showYearContent(year) {
+            // Hide all year contents
+            document.querySelectorAll('.year-content').forEach(content => {
+                content.style.display = 'none';
+            });
+
+            // Show the selected year content
+            document.getElementById(year).style.display = 'block';
+        }
+
+        document.querySelector('.module a').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('details').style.display = 'block';
+            window.scrollTo(0, document.body.scrollHeight);
+        });
+    </script>
+</body>
+</html>

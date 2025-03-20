@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+ 
+    
+    
+}
+
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.content {
+    margin-top: 20px;
+}
+
+.year-tabs {
+    display: flex;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background-color:  #4CAF50;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab.active {
+    background-color:  #206322;
+    color: white;
+}
+
+.content {
+    border-left: 3px solid  #7d807e;
+    padding-left: 10px;
+}
+
+.block {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.block-image {
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+.block-image{
+    width: 700px;
+}
+
+
+.block-header {
+    padding: 10px;
+    background-color:  #abe0ad;
+    border-bottom: 1px solid #ddd;
+}
+
+.block-header[data-tooltip] {
+    position: relative;
+}
+
+
+.block-header[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #247a52;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+.block-details {
+    display: none;
+    padding: 10px;
+}
+
+
+.year-content {
+    display: none;
+}
+
+.year-content.active {
+    display: block;
+}
+
+.profile-image {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.profile-image img {
+    width: 350px;
+    
+}
+
+
+
+#back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0dadad;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
