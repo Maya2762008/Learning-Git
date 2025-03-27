@@ -1,0 +1,113 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #D3F4BB;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    background-color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo-container img {
+    width: 90px;
+    height: auto;
+}
+
+.logo-container h1 {
+    font-size: 22px;
+    color: #3D5A49;
+    font-weight: 600;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h2,
+h3 {
+    color: #3D5A49;
+}
+
+.programme-list {
+    margin-bottom: 20px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #3D5A49;
+    border-radius: 4px;
+    background: #F5FFF0;
+    color: #3D5A49;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background: #3D5A49;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #2F4B3D;
+}
+
+.programme-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #3D5A49;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #3D5A49;
+    border-radius: 4px;
+    background: #F5FFF0;
+    color: #3D5A49;
+    font-size: 14px;
+}
+
+textarea {
+    height: 80px;
+}
+
+.apply-btn {
+    width: 100%;
+    margin-top: 15px;
+}
