@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Programmes Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="https://dynamic.design.com/asset/logo/068dde73-c66a-465e-9d19-069ef9bfc78f/logo-search-grid-1x?logoTemplateVersion=1&v=638724213517070000&text=MTMS+&colorpalette=green" alt="MTMS University Logo">
+            <h1>MTMS University - Admin</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Programmes Management</h2>
+
+        <div class="programme-list">
+            <h3>Available Programmes</h3>
+            <select>
+                <option value="CS01">BSc Computer Science</option>
+                <option value="BM02">BSc Business Management</option>
+                <option value="AI03">BSc Artificial Intelligence</option>
+                <option value="CY04">BSc Cybersecurity</option>
+                <option value="DA05">MSc Data Analytics</option>
+            </select>
+            <div class="buttons">
+                <button class="add-btn">ADD</button>
+                <button class="update-btn">UPDATE</button>
+                <button class="delete-btn">DELETE</button>
+            </div>
+        </div>
+
+        <div class="programme-form">
+            <h3>Adding a New Programme</h3>
+            <label>Programme Title:</label>
+            <input type="text" placeholder="Enter programme title">
+
+            <label>Programme Description:</label>
+            <textarea placeholder="Enter description"></textarea>
+
+            <label>Programme Type:</label>
+            <select>
+                <option>Undergraduate</option>
+                <option>Postgraduate</option>
+                <option>Full-time</option>
+                <option>Part-time</option>
+            </select>
+
+            <label>Institution Code:</label>
+            <input type="text" placeholder="Enter code">
+
+            <button class="apply-btn">APPLY</button>
+        </div>
+    </div>
+</body>
+
+</html>
